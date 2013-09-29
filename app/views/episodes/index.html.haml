@@ -4,5 +4,5 @@ There are no published episodes.
   %header
     %h2 Published
   %ul
-    %li.episode Episode 1
-    %li.episode Episode 2
+    - @episodes.published do |episode|
+      %li.episode=episode.title

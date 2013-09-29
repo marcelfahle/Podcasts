@@ -10,6 +10,7 @@ Then(/^I should see that there are no episodes published$/) do
 end
 
 Episode = Struct.new :status, :title
+
 Given(/^there are some episodes published$/) do
   @episodes = [
     Episode.new("published", "Episode 1"),
